@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "GraphQL Backend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksatter/learning-graphql-react.git"
+  },
+  "keywords": [
+    "Node",
+    "Apollo",
+    "GraphQL"
+  ],
+  "author": "Katheryn Satterlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksatter/learning-graphql-react/issues"
+  },
+  "homepage": "https://github.com/ksatter/learning-graphql-react#readme",
+  "dependencies": {
+    "@prisma/client": "^2.17.0",
+    "apollo-server": "^2.21.0",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "prisma": "^2.17.0"
+  }
+}
