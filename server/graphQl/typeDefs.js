@@ -2,23 +2,20 @@ const typeDefs = `
   type Query {
     info: String!
     feed: [Link!]!
-    link(id:ID!): Link
+    link(id:Int!): Link
   }
 
   type Mutation {
     createLink(url: String!, description: String!): Link!
-    updateLink(id: ID!, url: String, description: String): Link
-    deleteLink(id: ID!): Link
+    updateLink(id: Int!, url: String, description: String): Link
+    deleteLink(id: Int!): Link
   }
 
   type Link {
-    id: ID!
+    id: Int!
     description: String!
     url: String!
   }
-
-  
-
 `
 
 module.exports = typeDefs

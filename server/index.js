@@ -1,26 +1,18 @@
-const fs = require('fs');
-const path = require('path');
+
 const { ApolloServer } = require('apollo-server');
 
-const graphQl = require('./graphQl')
+const { PrismaClient } = require('@prisma/client');
 
-let links = [{
-    id: 'link-0',
-    url: 'www.howtographql.com',
-    description: 'Fullstack tutorial for GraphQL'
-}]
+const prisma = new PrismaClient();
 
-let idCount = links.length
+const graphQl = require('./graphQl');
 
 
 
-
-const server = new ApolloServer( graphQl )
+const server = new ApolloServer( {...graphQl});
 
 
 server
     .listen()
-    .then(({
-        url
-    }) => console.log(`Server is running on ${url}`))
+    .then(({url}) => console.log(`Server is running on ${url}`))
     .catch(err => console.error(err))

@@ -1,0 +1,29 @@
+{
+  "name": "learning-graphql-react",
+  "version": "1.0.0",
+  "description": "Hacker News clone using GraphQL and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd server && npm i && cd client && npm i",
+    "server": "cd server && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksatter/learning-graphql-react.git"
+  },
+  "keywords": [
+    "React",
+    "GraphQL",
+    "Apollo",
+    "Node"
+  ],
+  "author": "Katheryn Satterlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksatter/learning-graphql-react/issues"
+  },
+  "homepage": "https://github.com/ksatter/learning-graphql-react#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
