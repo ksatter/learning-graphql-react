@@ -1,16 +1,8 @@
-
+require('dotenv').config()
 const { ApolloServer } = require('apollo-server');
+const graphQlConfig = require('./models');
 
-const { PrismaClient } = require('@prisma/client');
-
-const prisma = new PrismaClient();
-
-const graphQl = require('./graphQl');
-
-
-
-const server = new ApolloServer( {...graphQl});
-
+const server = new ApolloServer(graphQlConfig);
 
 server
     .listen()

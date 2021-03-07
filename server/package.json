@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon .",
     "server": "npm run start"
-    
   },
   "repository": {
     "type": "git",
@@ -25,11 +24,14 @@
   },
   "homepage": "https://github.com/ksatter/learning-graphql-react#readme",
   "dependencies": {
-    "@prisma/client": "^2.17.0",
+    "@prisma/client": "^2.18.0",
     "apollo-server": "^2.21.0",
-    "graphql": "^15.5.0"
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
-    "prisma": "^2.17.0"
+    "prisma": "^2.18.0"
   }
 }
