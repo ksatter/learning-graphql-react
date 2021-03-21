@@ -12,8 +12,9 @@ module.exports = {
                 ...args, 
                 postedBy: { connect: { id: context.userId } } }
         })
-
-        context.pubsub.publish("New_Link", newlink)
+        console.log(newLink)
+        context.pubsub.publish("NEW_LINK", newLink)
         return newLink
-    }
+    },
+
 }

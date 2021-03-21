@@ -6,7 +6,6 @@ module.exports = {
     getUserId: (req, authToken) => {
         const token = authToken || req.headers.authorization.replace('Bearer ', '');
         if (!token) throw new Error('No token found');
-
         const { userId } = jwt.verify(token, secret);
         if (!userId) throw new Error('Not Authenticated')
 

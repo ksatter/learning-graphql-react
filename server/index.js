@@ -1,6 +1,6 @@
 require('dotenv').config()
 const { ApolloServer } = require('apollo-server');
-const graphQlConfig = require('./models');
+const graphQlConfig = require('./graphql');
 
 const server = new ApolloServer(graphQlConfig);
 

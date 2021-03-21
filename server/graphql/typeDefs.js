@@ -13,6 +13,10 @@ const typeDefs = `
     login(email:String!, password: String!): AuthPayload,
   }
 
+  type Subscription {
+    newLink: Link
+  }
+
   type Link {
     id: Int!
     description: String!
